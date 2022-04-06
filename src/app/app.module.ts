@@ -3,20 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DashboadModule } from './dashboard/dashboad.module';
 import { HeaderComponent } from './header/header.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
-import { SummaryComponent } from './dashboard/summary/summary.component';
-import { TransactionsTableComponent } from './dashboard/transactions-table/transactions-table.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    DashboardComponent,
-    SummaryComponent,
-    TransactionsTableComponent,
-  ],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [AppComponent, HeaderComponent],
+  imports: [BrowserModule, AppRoutingModule, DashboadModule],
   providers: [],
   bootstrap: [AppComponent],
 })
