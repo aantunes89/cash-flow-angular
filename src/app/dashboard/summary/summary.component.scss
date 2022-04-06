@@ -1,7 +1,6 @@
-@import url('../../styles.scss');
+@import url("../../../styles.scss");
 
 .summary {
-  
   &-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,7 +11,7 @@
   &-card {
     background-color: var(--shape);
     padding: 1.5rem;
-    border-radius: .25rem;
+    border-radius: 0.25rem;
     color: var(--text-title);
 
     header {
@@ -28,11 +27,9 @@
       display: block;
     }
 
-
     &:last-of-type {
       background-color: var(--green);
       color: var(--shape);
     }
   }
-  
 }
